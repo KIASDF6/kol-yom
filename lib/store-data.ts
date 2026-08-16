@@ -14,7 +14,7 @@ export const products: Product[] = [
     id: 'p001',
     category: 'home',
     title: { ar: 'مرطب هواء RGB دائري', en: 'RGB Air Humidifier' },
-    price: 12.,
+    price: 14.,
     image: '/products/p001.jpg',
   },
   {
