@@ -1,0 +1,113 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-cairo), var(--font-manrope), sans-serif;
+  --font-mono: var(--font-manrope), monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * .6);
+  --radius-md: calc(var(--radius) * .8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: dark;
+  --background: #0f0f0f;
+  --foreground: #fafafa;
+  --card: #171717;
+  --card-foreground: #fafafa;
+  --popover: #171717;
+  --popover-foreground: #fafafa;
+  --primary: #d4af37;
+  --primary-foreground: #0f0f0f;
+  --secondary: #f1f0ec;
+  --secondary-foreground: #0f0f0f;
+  --muted: #1c1c1c;
+  --muted-foreground: #a5a5a5;
+  --accent: #d4af37;
+  --accent-foreground: #0f0f0f;
+  --destructive: #ef6a68;
+  --border: #303030;
+  --input: #343434;
+  --ring: #d4af37;
+  --radius: .25rem;
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { @apply scroll-smooth bg-background; }
+  body { @apply bg-background text-foreground; }
+  button, a, input, select, textarea { @apply focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary; }
+  ::selection { @apply bg-primary text-primary-foreground; }
+}
+
+@layer components {
+  .logo-mark { clip-path: polygon(12% 0, 100% 0, 88% 100%, 0 100%); }
+  .nav-link { @apply relative py-2 text-xs font-semibold text-muted-foreground transition-colors hover:text-foreground; }
+  .nav-link::after { content: ''; @apply absolute inset-x-0 -bottom-1 h-px origin-center scale-x-0 bg-primary transition-transform; }
+  .nav-link.active { @apply text-foreground; }
+  .nav-link.active::after { @apply scale-x-100; }
+  .mobile-nav { @apply border-b border-border py-4 text-start text-sm text-muted-foreground last:border-0; }
+  .mobile-nav.active { @apply text-primary; }
+  .language-button, .icon-button { @apply flex h-10 items-center justify-center gap-2 border border-border px-3 text-xs font-bold transition-colors hover:border-primary hover:text-primary; }
+  .language-button svg, .icon-button svg, .gold-button svg, .outline-button svg, .product-action svg { @apply size-4; }
+  .icon-button { @apply size-10 p-0; }
+  .gold-button { @apply inline-flex min-h-12 items-center justify-center gap-3 bg-primary px-6 text-sm font-extrabold text-primary-foreground transition-all hover:brightness-110 active:translate-y-px; }
+  .outline-button { @apply inline-flex min-h-12 items-center justify-center gap-3 border border-border px-6 text-sm font-bold text-foreground transition-colors hover:border-primary hover:text-primary; }
+  .filter-pill { @apply shrink-0 border border-border px-5 py-3 text-xs font-semibold text-muted-foreground transition-colors hover:border-primary hover:text-foreground; }
+  .filter-pill.active { @apply border-primary bg-primary text-primary-foreground; }
+  .field { @apply flex flex-col gap-2 text-xs font-semibold text-foreground; }
+  .field input, .field select, .field textarea { @apply min-h-12 w-full border border-input bg-background px-3 text-sm font-normal text-foreground transition-colors placeholder:text-muted-foreground hover:border-muted-foreground focus:border-primary focus:outline-none; }
+  .field textarea { @apply resize-none py-3 leading-6; }
+  .field select:disabled { @apply cursor-not-allowed opacity-50; }
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(212,175,55,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(212,175,55,.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 86%);
+  pointer-events: none;
+}
+.hero-visual::before { content: ''; position: absolute; inset: 9% -7% -7% 8%; border: 1px solid rgba(212,175,55,.35); }
+.hero-frame::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 90px rgba(15,15,15,.2); pointer-events: none; }
+.product-image::after { content: ''; position: absolute; inset: 0; border: 1px solid transparent; transition: border-color .3s; pointer-events: none; }
+.product-card:hover .product-image::after { border-color: rgba(212,175,55,.65); }
+.product-card { transition: transform .3s ease; }
+.product-card:hover { transform: translateY(-4px); }
+input[type='search']::-webkit-search-cancel-button { display: none; }
+.hide-scrollbar { scrollbar-width: none; }
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.dialog-backdrop { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; overflow-y: auto; background: rgba(0,0,0,.82); padding: 1rem; backdrop-filter: blur(8px); animation: fade-in .2s ease-out; }
+.order-dialog { position: relative; width: min(100%, 1020px); max-height: calc(100vh - 2rem); overflow-y: auto; border: 1px solid var(--border); background: var(--background); box-shadow: 0 30px 100px rgba(0,0,0,.6); animation: rise-in .3s ease-out; }
+.dialog-close { position: absolute; inset-inline-end: .75rem; top: .75rem; z-index: 2; display: grid; width: 2.5rem; height: 2.5rem; place-items: center; border: 1px solid var(--border); background: var(--background); color: var(--foreground); transition: color .2s, border-color .2s; }
+.dialog-close:hover { color: var(--primary); border-color: var(--primary); }
+.dialog-close svg, .success-icon svg { width: 1.25rem; height: 1.25rem; }
+.form-grid { display: grid; gap: 1.25rem; }
+@media (min-width: 640px) { .form-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@keyframes fade-in { from { opacity: 0; } }
+@keyframes rise-in { from { opacity: 0; transform: translateY(18px); } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
