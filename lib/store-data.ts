@@ -21,7 +21,7 @@ export const products: Product[] = [
     id: 'p002',
     category: 'electronics',
     title: { ar: 'بروجكتر صغير محمول', en: 'Mini Portable Projector' },
-    price: 20,
+    price: 19,
     image: '/products/p002.jpg',
   },
   {
