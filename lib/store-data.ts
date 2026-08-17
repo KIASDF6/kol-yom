@@ -112,7 +112,7 @@ export const products: Product[] = [
     id: 'p015',
     category: 'electronics',
     title: { ar: 'كاميرا واي فاي صغيرة (زوج)', en: 'Mini WiFi Camera (Pair)' },
-    price: 11,
+    price: 15,
     image: '/products/p015.jpg',
   },
   {
@@ -189,7 +189,7 @@ export const products: Product[] = [
     id: 'p027',
     category: 'audio',
     title: { ar: 'سماعة القرآن الكريم المحمولة (سندس)', en: 'Sundus Portable Quran Speaker' },
-    price: 9,
+    price: 14,
     image: '/products/p027.jpg',
   },
   {
@@ -231,7 +231,7 @@ export const products: Product[] = [
     id: 'p033',
     category: 'beauty',
     title: { ar: 'فرشاة تدليك فروة الرأس', en: 'Scalp Massage Brush' },
-    price: 4,
+    price: 11,
     image: '/products/p033.jpg',
   },
   {
@@ -245,7 +245,7 @@ export const products: Product[] = [
     id: 'p035',
     category: 'audio',
     title: { ar: 'سماعات أذن لاسلكية ASD', en: 'ASD Wireless Earbuds' },
-    price: 7,
+    price: 10,
     image: '/products/p035.jpg',
   },
   {
@@ -259,7 +259,7 @@ export const products: Product[] = [
     id: 'p037',
     category: 'home',
     title: { ar: 'ماكينة قهوة RAF لكوبين', en: 'RAF 2-Cup Coffee Maker' },
-    price: 10,
+    price: 13,
     image: '/products/p037.jpg',
   },
   {
@@ -321,7 +321,7 @@ export const products: Product[] = [
   {
     id: 'p046',
     category: 'home',
-    title: { ar: 'عصارة وخلاط طعام 3 في 1', en: '3-in-1 Juicer & Blender' },
+    title: { ar: 'عصارة وخلاط طعام 4 في 1', en: '4-in-1 Juicer & Blender' },
     price: 19,
     image: '/products/p046.jpg',
   },
@@ -364,7 +364,7 @@ export const products: Product[] = [
     id: 'p052',
     category: 'audio',
     title: { ar: 'ساعة منبه رقمية بسماعة بلوتوث', en: 'Digital Alarm Clock BT Speaker' },
-    price: 9,
+    price: 13,
     image: '/products/p052.jpg',
   },
   {
@@ -420,21 +420,21 @@ export const products: Product[] = [
     id: 'p060',
     category: 'audio',
     title: { ar: 'سماعة قرآن Equantu SQ200 مع ريموت', en: 'Equantu SQ200 Quran Speaker' },
-    price: 8,
+    price: 10,
     image: '/products/p060.jpg',
   },
   {
     id: 'p061',
     category: 'beauty',
     title: { ar: 'ميزان وزن رقمي زجاجي شفاف', en: 'Digital Glass Body Scale' },
-    price: 5,
+    price: 9,
     image: '/products/p061.jpg',
   },
   {
     id: 'p062',
     category: 'electronics',
     title: { ar: 'كاميرا واي فاي صغيرة مخفية (فردية)', en: 'Mini WiFi Hidden Camera (Single)' },
-    price: 7,
+    price: 10,
     image: '/products/p062.jpg',
   },
   {
@@ -455,7 +455,7 @@ export const products: Product[] = [
     id: 'p065',
     category: 'beauty',
     title: { ar: 'جهاز تشذيب نسائي شامل 4 في 1', en: 'Women\'s 4-in-1 Grooming Kit' },
-    price: 7,
+    price: 10,
     image: '/products/p065.jpg',
   },
   {
@@ -476,7 +476,7 @@ export const products: Product[] = [
     id: 'p068',
     category: 'beauty',
     title: { ar: 'ماكينة قص شعر ذهبية فينتدج', en: 'Vintage Gold Hair Clipper' },
-    price: 8,
+    price: 10,
     image: '/products/p068.jpg',
   },
   {
@@ -497,14 +497,14 @@ export const products: Product[] = [
     id: 'p071',
     category: 'audio',
     title: { ar: 'سماعة رأس سلكية ASD رياضية', en: 'ASD Sport Wired Headphone' },
-    price: 7,
+    price:10,
     image: '/products/p071.jpg',
   },
   {
     id: 'p072',
     category: 'electronics',
     title: { ar: 'كاميرا واي فاي صغيرة مخفية (طقم 3 قطع)', en: 'Mini WiFi Hidden Camera (3-Pack)' },
-    price: 15,
+    price: 20,
     image: '/products/p072.jpg',
   },
   {
@@ -518,14 +518,14 @@ export const products: Product[] = [
     id: 'p074',
     category: 'beauty',
     title: { ar: 'ماكينة حلاقة متعددة الوظائف Kemei 3x1 للرجال', en: 'Kemei 3-in-1 Multi-Function Grooming Kit' },
-    price: 9,
+    price: 12,
     image: '/products/p074.jpg',
   },
   {
     id: 'p075',
     category: 'electronics',
     title: { ar: 'قلم كاميرا مخفية', en: 'Spy Pen Camera' },
-    price: 7,
+    price: 11,
     image: '/products/p075.jpg',
   },
 ]
