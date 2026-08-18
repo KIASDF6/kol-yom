@@ -406,14 +406,14 @@ export const products: Product[] = [
     id: 'p058',
     category: 'beauty',
     title: { ar: 'ماكينة حلاقة صغيرة فضية (طقم 3 قطع)', en: 'Mini Shaver Silver (3-Pack)' },
-    price: 10,
+    price: 23,
     image: '/products/p058.jpg',
   },
   {
     id: 'p059',
     category: 'audio',
     title: { ar: 'لمبة إضاءة بسماعة بلوتوث "Music Bulb"', en: 'Music Bulb BT Speaker Lamp' },
-    price: 8,
+    price: 10,
     image: '/products/p059.jpg',
   },
   {
@@ -444,13 +444,7 @@ export const products: Product[] = [
     price: 12,
     image: '/products/p063.jpg',
   },
-  {
-    id: 'p064',
-    category: 'beauty',
-    title: { ar: 'ماكينة حلاقة وتشذيب Kemei 3 في 1', en: 'Kemei 3-in-1 Shaver & Trimmer' },
-    price: 8,
-    image: '/products/p064.jpg',
-  },
+  
   {
     id: 'p065',
     category: 'beauty',
