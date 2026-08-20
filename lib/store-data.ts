@@ -27,7 +27,7 @@ export const products: Product[] = [
   {
     id: 'p003',
     category: 'electronics',
-    title: { ar: 'باور بانك 60000mAh مع فانوس', en: '60000mAh Power Bank with Lantern' },
+    title: { ar: 'باور بانك 20000mAh مع فانوس', en: '20000mAh Power Bank with Lantern' },
     price: 11,
     image: '/products/p003.jpg',
   },
